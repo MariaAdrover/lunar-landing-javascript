@@ -25,6 +25,21 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 	z-index:1
 	}
 	
+#m1a{	
+	width:100%;
+	max-width:92%;
+	margin:2%;
+	background-color:red;
+	border-style: solid;
+	border-width: 11px;
+    border-color: grey;
+}
+#fuel{
+	width:100%;	
+	max-width:100%;
+	background-color:#00d000;
+}
+	
 .luna{
 	z-index:1;
 	text-align:center;
