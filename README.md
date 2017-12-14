@@ -21,6 +21,7 @@ velocidad - fuel - altura  pasan a fuel - altura - velocidad
 * Pongo la imagen de fondo del juego
 * Pongo la imagen de la luna, modificando un poco el tamaño del div y el z-index de la luna y de la nave, 
 para que cuando el cohete aterrice, su imagen tape una porción de la luna 
+* Implemento el indicador de fuel, una barra indicadora en lugar de un número
 
 
 
