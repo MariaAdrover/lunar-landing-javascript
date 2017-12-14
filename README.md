@@ -10,6 +10,9 @@ Previsualización: ~~https://rawgit.com/urbinapro/lunar-landing-javascript/maste
 
 
 ## Version 0.1
+
+Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.1/index.html
+
 * Subo la carpeta img con las imágenes del proyecto
 * Actualización del enlace al juego a través de rawgit
 * Cambio el orden de los indicadores:
@@ -20,7 +23,6 @@ velocidad - fuel - altura  pasan a fuel - altura - velocidad
 para que cuando el cohete aterrice, su imagen tape una porción de la luna 
 
 
-Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.1/index.html
 
 Tareas a desarrollar:
 * Ponerlo bonito según vuestro diseño anterior. No te olvides de optimizar las imágenes. Recuerda que se pueden cargar diferentes tamaños y formas de fondos en función del dispositivo usando css.
