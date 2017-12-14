@@ -1,11 +1,10 @@
 body,html{height:100%;padding:0px;margin:0px;}
 body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 
-.a{background-color:#00bcd4;}
+.a{}
 /*.b{background-color:red;}*/
 
-.c{
-	background-color:#cddc39;
+.c{	
 	display:block !important
 	}
 	
@@ -19,8 +18,7 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 
 .luna{
 	z-index:1;
-	text-align:center;
-	background-color:pink;
+	text-align:center;	
 	height:17%;
 	width:100%;
 	position:fixed;
