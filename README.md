@@ -8,6 +8,11 @@ Versión esqueleto del juego Lunar Landing que incluye:
 
 Previsualización: https://rawgit.com/urbinapro/lunar-landing-javascript/master/index.html
 
+
+## Version 0.1
+* Subo la carpeta img con las imágenes del proyecto
+* Actualización del enlace al juego a través de rawgit
+
 Tareas a desarrollar:
 * Ponerlo bonito según vuestro diseño anterior. No te olvides de optimizar las imágenes. Recuerda que se pueden cargar diferentes tamaños y formas de fondos en función del dispositivo usando css.
 * Poner los menús (móvil y escritorio) según vuestro diseño anterior.
