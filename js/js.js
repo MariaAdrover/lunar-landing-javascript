@@ -77,6 +77,8 @@ function moverNave(){
 function motorOn(){
 	//el motor da aceleración a la nave
 	a=-g;
+	//Se cambia la imagen al cohete con fuego
+	document.getElementById("n").src = "img/coheteFuego.png"
 	//mientras el motor esté activado gasta combustible
 	if (timerFuel==null)
 	timerFuel=setInterval(function(){ actualizarFuel(); }, 10);	
@@ -85,6 +87,8 @@ function motorOff(){
 	a=g;
 	clearInterval(timerFuel);
 	timerFuel=null;
+	//Cambio la image: sin fuego
+	document.getElementById("n").src = "img/cohete.png"
 }
 function actualizarFuel(){
 	//Restamos combustible hasta que se agota
