@@ -8,6 +8,8 @@ Versión esqueleto del juego Lunar Landing que incluye:
 
 Previsualización: ~~https://rawgit.com/urbinapro/lunar-landing-javascript/master/index.html~~
 
+## Versión 0.2
+
 
 ## Version 0.1
 
