@@ -6,12 +6,14 @@ Versión esqueleto del juego Lunar Landing que incluye:
 * Js: programación realista básica necesaria para dejar caer la nave y parar cuando llega a un límite. Actualiza la velocidad y la altura en %/s y % (1% de pantalla = 1 metro).
 * No dispone de imágenes.
 
-Previsualización: https://rawgit.com/urbinapro/lunar-landing-javascript/master/index.html
+Previsualización: ~~https://rawgit.com/urbinapro/lunar-landing-javascript/master/index.html~~
 
 
 ## Version 0.1
 * Subo la carpeta img con las imágenes del proyecto
 * Actualización del enlace al juego a través de rawgit
+
+Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.1/index.html
 
 Tareas a desarrollar:
 * Ponerlo bonito según vuestro diseño anterior. No te olvides de optimizar las imágenes. Recuerda que se pueden cargar diferentes tamaños y formas de fondos en función del dispositivo usando css.
