@@ -12,6 +12,13 @@ Previsualización: ~~https://rawgit.com/urbinapro/lunar-landing-javascript/maste
 ## Version 0.1
 * Subo la carpeta img con las imágenes del proyecto
 * Actualización del enlace al juego a través de rawgit
+* Cambio el orden de los indicadores:
+velocidad - fuel - altura  pasan a fuel - altura - velocidad
+* La imagen de la nave cambia cuando aceleramos (sin sprites)
+* Pongo la imagen de fondo del juego
+* Pongo la imagen de la luna, modificando un poco el tamaño del div y el z-index de la luna y de la nave, 
+para que cuando el cohete aterrice, su imagen tape una porción de la luna 
+
 
 Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.1/index.html
 
