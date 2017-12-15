@@ -56,6 +56,17 @@ function start(){
 }
 
 function stop(){
+	
+	//Si pulso sobre la pantalla la imagen del cohete aterrizado se mantiene sin fuego
+	document.onclick = function(){
+		document.getElementById("n").src = "img/cohete.png"
+	}
+	//Si pulso una tecla la imagen del cohete aterrizado se mantiene sin fuego
+	document.onkeydown = function(){
+		document.getElementById("n").src = "img/cohete.png"
+	}
+	//Al haber aterrizado la velocidad se pone a 0
+	velocidad.innerHTML=0;	
 	clearInterval(timer);
 }
 
