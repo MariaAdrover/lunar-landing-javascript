@@ -57,6 +57,8 @@ function start(){
 
 function stop(){
 	
+	clearInterval(timer);
+	
 	//Si pulso sobre la pantalla la imagen del cohete aterrizado se mantiene sin fuego
 	document.onclick = function(){
 		document.getElementById("n").src = "img/cohete.png"
@@ -65,9 +67,9 @@ function stop(){
 	document.onkeydown = function(){
 		document.getElementById("n").src = "img/cohete.png"
 	}
-	//Al haber aterrizado la velocidad se pone a 0
-	velocidad.innerHTML=0;	
-	clearInterval(timer);
+	//Al haber aterrizado la velocidad y altura se ponen a 0
+	velocidad.innerHTML=0;
+	altura.innerHTML=0;	
 }
 
 function moverNave(){
@@ -76,7 +78,7 @@ function moverNave(){
 	y +=v*dt;
 	//actualizar marcadores
 	velocidad.innerHTML=v.toFixed(1);
-	altura.innerHTML=y.toFixed(1);
+	altura.innerHTML=(70-y).toFixed(1);
 	
 	//mover hasta que top sea un 70% de la pantalla
 	if (y<70){ 
