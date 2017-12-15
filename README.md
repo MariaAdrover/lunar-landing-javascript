@@ -10,6 +10,13 @@ Previsualización: ~~https://rawgit.com/urbinapro/lunar-landing-javascript/maste
 
 ## Versión 0.2
 
+Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.2/index.html
+
+* Indicadores de velocudad y altura :combinación de una imagen con un indicador de tipo numérico
+* Limitación a dos decimales de los indicadores de altura y velocidad (método **.toFixed(2)** aplicado a ambos indicadores)
+* Reorganización de la estructura de elementos html:
+elimino el div b, cambio los indicadores guardados como una lista por divs contenedores
+
 
 ## Version 0.1
 
