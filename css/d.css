@@ -1,35 +1,121 @@
 body,html{height:100%;padding:0px;margin:0px;}
 body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 
-.a{}
-/*.b{background-color:red;}*/
-
-.c{	
-	display:block !important
-	}
-	
-.a,.b,.c{
+/*.a{
 	display:inline-block;
-	width:33.33%;
+	width:22%;
 	height:100%;
 	float:left;
-	}
+}
+/*.b{background-color:red;}*/
+
+/*.c{	
+	display:block !important
+	}*/
+	
+.a{
+	text-align:left;
+	position:fixed;
+	top:2%;
+	left:2%;
+	width:20%;
+	height:30%;
+}
+	
+.b{
+	display:inline-block;
+	width:55%;
+	height:100%;
+	float:left;
+}
+
+.c{
+	display:inline-block;
+	width:20%;
+	height:100%;
+	float:left;
+}
+	
 /*.d{height:100%;}*/
 
 #m1a{	
+	/*position:relative;*/
 	width:100%;
 	max-width:92%;
-	margin:2%;
+	margin:5%;
 	background-color:red;
 	border-style: solid;
 	border-width: 11px;
     border-color: grey;
 }
+#m1b img{width:100%}
+
+#m1b{
+	position:relative;	
+	width:100%;
+	max-width:100%;
+	margin:5%;
+
+}
+
 #fuel{
-	width:100%;	
+	width:100%;
+	height:100%;
 	max-width:100%;
 	background-color:#00d000;
 }
+
+/*#altura{
+	position:absolute;
+	top:34%;
+	right:9%;
+	background-color:#b0b5c5;
+}
+
+#velocidad{
+	position:absolute;
+	top:38%;
+	right:7%;
+	background-color:#b0b5c5;	
+}*/
+
+.numero{
+	z-index:2;
+	position:absolute;
+	left:71%;
+	text-align:center;
+	width:18%;
+	height:10%;
+	color:black;
+	font-family: 'Arial';
+	line-height: 2;
+	background-color:#b0b5c5;
+	padding:5%;
+	margin-top:4%;
+}
+
+#menu{
+	z-index:3;
+	text-align:left;
+	position:fixed;
+	top:33%;
+	left:25%;
+	width:50%;
+	height:40%;
+	background-color:yellow;
+	border-style: solid;
+	border-width: 12px;
+    border-color: grey;
+	display:none;
+}
+#c{position:absolute; left:5%; top:2%; width:90%; height:24%;}
+#c img{width:100%;height:100%;padding:2%;}
+
+#d{position:absolute; left:5%; top:32%; width:90%; height:27%;}
+#d img{width:100%;height:100%;padding:2%;}
+
+#e{position:absolute; left:5%; top:65%; width:90%; height:26%;}
+#e img{width:100%;height:100%;padding:2%;}
 
 .luna{
 	z-index:1;
@@ -57,7 +143,9 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 
 #cpanel{}
 
-#hidem,#showm{display:none}
+#hidem,#showm{float:right}
+
+/*#hidem,#showm{display:none}*/
 
 
 /*<div class="a">
