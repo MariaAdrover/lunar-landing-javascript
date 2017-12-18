@@ -5,10 +5,14 @@
 
 Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.2/index.html
 
-* Indicadores de velocudad y altura :combinación de una imagen con un indicador de tipo numérico
+* Indicadores de velocidad y altura :combinación de una imagen con un indicador de tipo numérico
 * Limitación a dos decimales de los indicadores de altura y velocidad (método **.toFixed(2)** aplicado a ambos indicadores)
-* Reorganización de la estructura de elementos html:
-elimino el div b, cambio los indicadores guardados como una lista por divs contenedores
+* Reorganización de la estructura de elementos html: cambio los indicadores guardados como una lista por divs contenedores
+* Al aterrizar: los indicadores de velocidad y altura se ponen a cero y ya no cambia la imagde la nave aunque nos quede combustible 
+y aceleremos.
+ARREGLAR:
+* Que la nave no se salga de la pantalla
+* Que durante el vuelo, si se ha terminado el combustible no se pueda acelerar
 
 
 ## Version 0.1
