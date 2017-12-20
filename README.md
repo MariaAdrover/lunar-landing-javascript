@@ -1,12 +1,45 @@
 # Lunar lander con html, css y javascript
-Versión esqueleto del juego Lunar Landing que incluye:
+
+## Versión 0.3
+
+Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.3/index.html
+
+## Versión 0.2
+
+Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.2/index.html
+
+* Indicadores de velocidad y altura :combinación de una imagen con un indicador de tipo numérico
+* Limitación a dos decimales de los indicadores de altura y velocidad (método **.toFixed(2)** aplicado a ambos indicadores)
+* Reorganización de la estructura de elementos html: cambio los indicadores guardados como una lista por divs contenedores
+* Al aterrizar: los indicadores de velocidad y altura se ponen a cero y ya no cambia la imagde la nave aunque nos quede combustible 
+y aceleremos.
+ARREGLAR:
+* Que la nave no se salga de la pantalla
+* Que durante el vuelo, si se ha terminado el combustible no se pueda acelerar
+
+
+## Version 0.1
+
+Previsualización: ~~https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.1/index.html~~
+
+* Subo la carpeta img con las imágenes del proyecto
+* Actualización del enlace al juego a través de rawgit
+* Cambio el orden de los indicadores:
+velocidad - fuel - altura  pasan a fuel - altura - velocidad
+* La imagen de la nave cambia cuando aceleramos (sin sprites)
+* Pongo la imagen de fondo del juego
+* Pongo la imagen de la luna, modificando un poco el tamaño del div y el z-index de la luna y de la nave, 
+para que cuando el cohete aterrice, su imagen tape una porción de la luna 
+* Implemento el indicador de fuel, una barra indicadora en lugar de un número
+
+## Versión esqueleto del juego Lunar Landing que incluye:
 
 * Html con los elementos básicos del juego
 * Css: d.css y m.css dos versiones que cargan mediante media query dependiendo del tamaño de pantalla.
 * Js: programación realista básica necesaria para dejar caer la nave y parar cuando llega a un límite. Actualiza la velocidad y la altura en %/s y % (1% de pantalla = 1 metro).
 * No dispone de imágenes.
 
-Previsualización: https://rawgit.com/urbinapro/lunar-landing-javascript/master/index.html
+Previsualización: ~~https://rawgit.com/urbinapro/lunar-landing-javascript/master/index.html~
 
 Tareas a desarrollar:
 * Ponerlo bonito según vuestro diseño anterior. No te olvides de optimizar las imágenes. Recuerda que se pueden cargar diferentes tamaños y formas de fondos en función del dispositivo usando css.
