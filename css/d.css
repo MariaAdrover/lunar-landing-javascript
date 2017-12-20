@@ -1,45 +1,15 @@
 body,html{height:100%;padding:0px;margin:0px;}
 body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
-
-/*.a{
-	display:inline-block;
-	width:22%;
-	height:100%;
-	float:left;
-}
-/*.b{background-color:red;}*/
-
-/*.c{	
-	display:block !important
-	}*/
 	
 .a{
-	/*text-align:left;*/
 	position:fixed;
 	top:2%;
 	left:2%;
 	width:20%;
 	height:30%;
 }
-	
-.b{
-	display:inline-block;
-	width:55%;
-	height:100%;
-	float:left;
-}
 
-.c{
-	display:inline-block;
-	width:20%;
-	height:100%;
-	float:left;
-}
-	
-/*.d{height:100%;}*/
-
-#m1a{	
-	/*position:relative;*/
+.m1a{	
 	width:100%;
 	max-width:92%;
 	margin:5%;
@@ -48,9 +18,9 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 	border-width: 11px;
     border-color: grey;
 }
-#m1b img{width:100%}
+.m1b img{width:100%}
 
-#m1b{
+.m1b{
 	position:relative;	
 	width:100%;
 	max-width:100%;
@@ -59,46 +29,46 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 }
 
 #fuel{
-	/*width:100%;*/
 	height:100%;
 	max-width:100%;
 	background-color:#00d000;
 }
 
-/*#altura{
-	position:absolute;
-	top:34%;
-	right:9%;
-	background-color:#b0b5c5;
-}
-
-#velocidad{
-	position:absolute;
-	top:38%;
-	right:7%;
-	background-color:#b0b5c5;	
-}*/
 
 .numero{
-	/*z-index:2;*/
 	position:absolute;
 	right:3%;
 	top:16%;
-	/*width:18%;
-	height:10%;*/
 	color:black;
 	text-align:center;
 	font-family: 'Arial';
 	font-size:2vw;
-	/*line-height: 2;*/
 	background-color:#b0b5c5;
 	padding:3%;
-	/*margin-top:4%;*/
+}
+	
+.c{	
+	text-align:right;
+	display:block;
+	position:fixed;
+	top:2%;
+	right:2%;
+	width:25%;
 }
 
-#menu{
-	z-index:3;
-	text-align:left;
+.botonC:hover {background-color: #0043E1;}
+
+.botonC {
+	display:inline-block;
+	width:40%;
+	padding:2%;
+}
+
+.botonC img{width:100%;}
+
+.menu{
+	z-index:4;
+	text-align:center;
 	position:fixed;
 	top:33%;
 	left:25%;
@@ -110,14 +80,43 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
     border-color: grey;
 	display:none;
 }
-#c{position:absolute; left:5%; top:2%; width:90%; height:24%;}
-#c img{width:100%;height:100%;padding:2%;}
 
-#d{position:absolute; left:5%; top:32%; width:90%; height:27%;}
-#d img{width:100%;height:100%;padding:2%;}
+.botonMenu:hover {background-color: #0043E1;}
+#hidem:hover {background-color: #0043E1;}
 
-#e{position:absolute; left:5%; top:65%; width:90%; height:26%;}
-#e img{width:100%;height:100%;padding:2%;}
+.botonMenu, #hidem {
+	position:relative;
+	height:25%;
+	padding:2%;
+}
+
+.menu img {
+	max-width:100%;
+	max-height:100%;
+	height:100%;
+}
+
+/*.botonMenu {
+	text-align:center;
+	position:absolute;
+	display:block;
+	padding:2%;
+	height:20%
+}
+
+#m2a{
+	top:0%;
+}
+#m2b{
+	top:25%;
+}
+#m2c{
+	top:50%;
+}
+#m2d{
+	top:75%;
+}*/
+
 
 .luna{
 	z-index:1;
@@ -129,8 +128,6 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 	}
 	
 .luna img{height:100%;}
-
-/*#nave{z-index:2;background:url(../img/314x158spriteNave1.png) 0 0;position:fixed;top:5%;left:42%;width:157px;height:158px;}*/
 
 #nave{
 	z-index:2;
@@ -145,9 +142,9 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 
 #cpanel{}
 
-#hidem,#showm{float:right}
+/*#hidem,#showm{float:right}
 
-/*#hidem,#showm{display:none}*/
+#hidem,#showm{display:none}*/
 
 
 /*<div class="a">
