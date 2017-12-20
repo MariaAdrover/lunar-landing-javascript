@@ -4,6 +4,23 @@
 
 Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.3/index.html
 
+* Añadidos los botones de la derecha:
+  * Botón para cambiar de nave
+  * Botón de menú
+* Al pulsar el botón de cambiar de nave, se visualiza una nave diferente. De momento sólo hay dos modelos de nave, por lo 
+que si se vuelve a pulsar volvemos a jugar con la nave del principio.
+* El botón menú despliega un menú de opciones. He diseñado y añadido al menú de opciones un botón para volver al juego
+* Al acelerar sale fuego de la nave (con ambos modelos). He retocado un poco las imágenes para que al pasar de la imagen con fuego
+a la imagen sin fuego, el cuerpo de la nave no se desplace. 
+* Sólo se puede acelerar con el teclado.
+* ARREGLAR:
+  * Versión móvil
+  * Visualización del menú
+  * Página de instrucciones 
+  * Añadir botón About
+  * Qué ocurre al aterrizar: mostrar mensaje, diseñar y mostrar imagen (aterrizado o explosión)
+  * Implementar botón de dificultad
+
 ## Versión 0.2
 
 Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.2/index.html
@@ -13,10 +30,10 @@ Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.2
 * Reorganización de la estructura de elementos html: cambio los indicadores guardados como una lista por divs contenedores
 * Al aterrizar: los indicadores de velocidad y altura se ponen a cero y ya no cambia la imagde la nave aunque nos quede combustible 
 y aceleremos.
-ARREGLAR:
-* Que la nave no se salga de la pantalla
-* Que durante el vuelo, si se ha terminado el combustible no se pueda acelerar
-
+* ARREGLAR:
+  * Que la nave no se salga de la pantalla
+  * Que durante el vuelo, si se ha terminado el combustible no se pueda acelerar
+  * Que la velocidad sea siempre positiva
 
 ## Version 0.1
 
