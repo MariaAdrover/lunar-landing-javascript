@@ -49,7 +49,7 @@ window.onload = function(){
 	
 	//encender/apagar el motor al hacer click en el boton POWER ON/POWER OFF
 	document.getElementById('power').onclick = function () {
- 	  if (a==g){
+ 	  if (a==g && y<70){
   		motorOn();
  	  } else {
   		motorOff();
@@ -57,11 +57,11 @@ window.onload = function(){
 	}
 	//encender/apagar al apretar/soltar una tecla
 	
-	/*document.onkeydown = function (e){ //solo al apretar espacio NO FUNCIONA
+	document.onkeydown = function (e){ //solo al apretar espacio NO FUNCIONA
 		if (e.keyCode==32){
 			motorOn();
-		}else{motorOff();}
-	}*/
+		}
+	}
 	
 	/*document.onkeydown = function(){ NO FUNCIONA
 		var e=event.keyCode;
@@ -70,7 +70,7 @@ window.onload = function(){
 		}else{motorOff();}
 	}*/
 	
-	document.onkeydown = motorOn;
+	//document.onkeydown = motorOn;
 	document.onkeyup = motorOff;
 	
 	//Empezar a mover la nave justo después de cargar la página
