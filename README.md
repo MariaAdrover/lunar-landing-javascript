@@ -6,7 +6,7 @@ Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.4
 
 ## Versión 0.3
 
-Previsualización: ~~https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.3/index.html
+Previsualización: ~~https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.3/index.html~~
 
 * Añadidos los botones de la derecha:
   * Botón para cambiar de nave
