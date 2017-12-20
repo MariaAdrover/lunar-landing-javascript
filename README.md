@@ -1,8 +1,30 @@
 # Lunar lander con html, css y javascript
 
+## Versión 0.4
+
+Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.4/index.html
+
 ## Versión 0.3
 
-Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.3/index.html
+Previsualización: ~~https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.3/index.html
+
+* Añadidos los botones de la derecha:
+  * Botón para cambiar de nave
+  * Botón de menú
+* Al pulsar el botón de cambiar de nave, se visualiza una nave diferente. De momento sólo hay dos modelos de nave, por lo 
+que si se vuelve a pulsar volvemos a jugar con la nave del principio.
+* El botón menú despliega un menú de opciones. He diseñado y añadido al menú de opciones un botón para volver al juego
+* Al acelerar sale fuego de la nave (con ambos modelos). He retocado un poco las imágenes para que al pasar de la imagen con fuego
+a la imagen sin fuego, el cuerpo de la nave no se desplace. 
+* Sólo se puede acelerar con el teclado.
+* código html y css validados
+* ARREGLAR:
+  * Versión móvil
+  * Visualización del menú
+  * Botón y página de instrucciones 
+  * Añadir botón About
+  * Qué ocurre al aterrizar: mostrar mensaje, diseñar y mostrar imagen (aterrizado o explosión)
+  * Implementar botón de dificultad y de reiniciar
 
 ## Versión 0.2
 
