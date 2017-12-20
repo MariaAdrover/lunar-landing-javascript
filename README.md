@@ -13,6 +13,7 @@ que si se vuelve a pulsar volvemos a jugar con la nave del principio.
 * Al acelerar sale fuego de la nave (con ambos modelos). He retocado un poco las imágenes para que al pasar de la imagen con fuego
 a la imagen sin fuego, el cuerpo de la nave no se desplace. 
 * Sólo se puede acelerar con el teclado.
+* código html y css validados
 * ARREGLAR:
   * Versión móvil
   * Visualización del menú
