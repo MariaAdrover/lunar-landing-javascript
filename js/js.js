@@ -47,14 +47,14 @@ window.onload = function(){
 		cambiarNave();
 	}
 	
-	//encender/apagar el motor al hacer click en la pantalla
-	/*document.onclick = function () {
+	//encender/apagar el motor al hacer click en el boton POWER ON/POWER OFF
+	document.getElementById('power').onclick = function () {
  	  if (a==g){
   		motorOn();
  	  } else {
   		motorOff();
  	  }
-	}*/
+	}
 	//encender/apagar al apretar/soltar una tecla
 	
 	/*document.onkeydown = function (e){ //solo al apretar espacio NO FUNCIONA

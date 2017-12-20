@@ -77,6 +77,20 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 
 .botonC img{width:100%;}
 
+#power {
+	text-align:center;
+	position:fixed;
+	bottom:5%;
+	right:1%;
+	width:20%;
+	height:20%;	
+}
+
+#power img{
+	width:100%;
+	max-width:100%;
+}
+
 .menu{
 	z-index:4;
 	text-align:center;
