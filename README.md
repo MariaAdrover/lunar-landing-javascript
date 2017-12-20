@@ -17,10 +17,10 @@ a la imagen sin fuego, el cuerpo de la nave no se desplace.
 * ARREGLAR:
   * Versión móvil
   * Visualización del menú
-  * Página de instrucciones 
+  * Botón y página de instrucciones 
   * Añadir botón About
   * Qué ocurre al aterrizar: mostrar mensaje, diseñar y mostrar imagen (aterrizado o explosión)
-  * Implementar botón de dificultad
+  * Implementar botón de dificultad y de reiniciar
 
 ## Versión 0.2
 
