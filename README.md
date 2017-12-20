@@ -10,10 +10,10 @@ Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.2
 * Reorganización de la estructura de elementos html: cambio los indicadores guardados como una lista por divs contenedores
 * Al aterrizar: los indicadores de velocidad y altura se ponen a cero y ya no cambia la imagde la nave aunque nos quede combustible 
 y aceleremos.
-ARREGLAR:
- * Que la nave no se salga de la pantalla
- * Que durante el vuelo, si se ha terminado el combustible no se pueda acelerar
- * Que la velocidad sea siempre positiva
+* ARREGLAR:
+  * Que la nave no se salga de la pantalla
+  * Que durante el vuelo, si se ha terminado el combustible no se pueda acelerar
+  * Que la velocidad sea siempre positiva
 
 
 ## Version 0.1
