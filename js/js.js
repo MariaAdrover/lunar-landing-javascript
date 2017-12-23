@@ -131,7 +131,7 @@ function cambiarNave(){
 	if (nave==1){
 		document.getElementById('n').src='img/cohete.png';
 	}else{
-		document.getElementById('n').src='img/cohete2.png';
+		document.getElementById('n').src='img/nave2_gas1.png';
 	}
 }
 
@@ -176,7 +176,7 @@ function moverNave(){
 		if (nave==1){
 			document.getElementById("n").src = "img/cohete.png"
 		}else{
-			document.getElementById("n").src = "img/cohete2.png"
+			document.getElementById("n").src = "img/nave2_gas1.png"
 		}
 		stop();
 		finalJuego();
@@ -191,7 +191,7 @@ function motorOn(){
 		if (nave==1){
 			document.getElementById("n").src = "img/coheteFuego.png"
 		}else{
-			document.getElementById("n").src = "img/cohete2Fuego.png"
+			document.getElementById("n").src = "img/nave2_gas2.png"
 		}
 	}else{ 
 		motorOff();
@@ -210,7 +210,7 @@ function motorOff(){
 	if (nave==1){
 		document.getElementById("n").src = "img/cohete.png"
 	}else{
-		document.getElementById("n").src = "img/cohete2.png"
+		document.getElementById("n").src = "img/nave2_NO_gas.png"
 	}
 }
 
