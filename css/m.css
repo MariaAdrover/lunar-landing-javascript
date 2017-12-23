@@ -174,7 +174,7 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 	margin-left:5%;
 }
 
-#final1, final2 {
+#final1, #final2 {
 	z-index:5;
 	text-align:center;
 	position:fixed;
