@@ -4,6 +4,12 @@
 
 Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.4/index.html
 
+* Actualizada versión móvil
+* Añadidos botones de dificultad al cargar la página (diseño básico). 
+El juego no empieza hasta que no se ha seleccionado un nivel de dificultad.
+* Revisión y depuración de errores de eventos y funcionamiento general del juego
+* Añadido mensaje (alert) al aterrizar la nave
+
 ## Versión 0.3
 
 Previsualización: ~~https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.3/index.html~~
