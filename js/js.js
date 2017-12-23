@@ -1,9 +1,11 @@
-
 //ENTORNO
 var g = 4.622;
 var dt = 0.016683;
 var timer=null;
 var timerFuel=null;
+
+var pause = false;
+var juegoEmpezado = false;
 
 //NAVE
 var y = 5; // altura inicial y0=10%, debe leerse al iniciar si queremos que tenga alturas diferentes dependiendo del dispositivo
@@ -13,76 +15,108 @@ var a = g; //la aceleración cambia cuando se enciende el motor de a=g a a=-g (s
 var vAterrizaje; //velocidad de aterrizaje
 var nave=1; //Identificador de los modelos de naves
 var aterrizado = false; 
+var sinCombustible = false; 
 
 //MARCADORES
 var velocidad = null;
 var altura = null;
 var combustible = null;
 
-//MENU
-var menuVisible = false;
-
-
 //al cargar por completo la página...
-window.onload = function(){
-	
+window.onload = function(){	
 	
 	velocidad = document.getElementById("velocidad");
 	altura = document.getElementById("altura");
 	combustible = document.getElementById("fuel");
-
-	
-	//definición de EVENTOS
-	
-	//MENÚ	
-	//mostrar/ocultar menú con el botón menú
-    document.getElementById("showm").onclick = function () {
-		if (menuVisible) {
-			menuVisible = false;
-			document.getElementsByClassName("menu")[0].style.display = "none";
-			start();
-		}else{
-			document.getElementsByClassName("menu")[0].style.display = "block";
-			stop();
-			menuVisible = true;
+		
+	//botón MENU
+	document.getElementById("showm").onclick = function (){
+		if (juegoEmpezado){
+			if (pause){
+				reanudarJuego();
+			}else{
+				pausarJuego();
+			}
 		}
-	}	
-	//ocultar menú con botón -volver al juego- del menú
-	document.getElementById("hidem").onclick = function () {
-		menuVisible = false;
-		document.getElementsByClassName("menu")[0].style.display = "none";		
-		start();
-	}	
+	}
 	
-	//cambiar de nave
+	//botón VOLVER AL JUEGO del menú
+	document.getElementById("hidem").onclick = function (){
+		reanudarJuego();
+	}
+	
+	//botón CAMBIAR DE NAVE
+	//siempre está operativo
 	document.getElementById('cambiarNave').onclick = function() {
 		cambiarNave();
 	}	
 	
 	//MOTOR
-	//encender/apagar el motor al hacer click en el boton POWER ON/POWER OFF
+	//botón POWER (encender/apagar el motor)
 	document.getElementById('power').onclick = function () {
- 	  if (a == g && aterrizado == false){
-  		motorOn();
- 	  } else {
-  		motorOff();
- 	  }
+		botonPower ();
 	}	
-	//encender al apretar la tecla ESPACIO
-	document.onkeydown = function (e){ //solo al apretar espacio NO FUNCIONA
+	//teclado
+	document.onkeydown = function (e){ //tecla ESPACIO 
 		if (e.keyCode==32){
-			motorOn();
+			teclaEspacioPulsada ();
 		}
+	}	
+	document.onkeyup = motorOff;
+
+	//EMPEZAR EL JUEGO
+	document.getElementById('facil').onclick = function (){
+		nivelFacil();
 	}
 	
-	//apagar el motor al soltar la tecla ESPACIO
-	document.onkeyup = motorOff;
+	document.getElementById('dificil').onclick = function (){
+		nivelDificil();
+	}
 	
-	//Empezar a mover la nave justo después de cargar la página
-	start();
 }
 
 //Definición de funciones
+
+function nivelFacil (){
+	document.getElementById('dificultad').style.display='none';
+	juegoEmpezado = true;
+	start();
+}
+
+function nivelDificil (){
+	document.getElementById('dificultad').style.display='none';
+	v=100;
+	juegoEmpezado = true;
+	start();
+}
+
+function botonPower (){
+	if (juegoEmpezado == true && pause == false && aterrizado == false && sinCombustible == false){
+		if (a == g){
+			motorOn();
+		}else {
+			motorOff();
+		}
+	} 	
+}
+
+function pausarJuego(){
+	document.getElementsByClassName("menu")[0].style.display = "block";
+	stop();
+	pause = true;
+}
+
+function reanudarJuego(){
+	pause = false;
+	document.getElementsByClassName("menu")[0].style.display = "none";
+	start();
+}
+
+function teclaEspacioPulsada (){
+	if (juegoEmpezado == true && pause == false && aterrizado == false && sinCombustible == false){
+  		motorOn();
+ 	}
+}
 
 function cambiarNave(){
 	if (nave<2){ //De momento sólo hay 2 modelos de nave
@@ -108,10 +142,10 @@ function stop(){
 	clearInterval(timer);
 	
 	//Al haber aterrizado la velocidad y altura se ponen a 0
-		if (y>=70){ //Sólo si ya hemos aterrizado, no cuando se despliega el menú
-			velocidad.innerHTML=0;
-			altura.innerHTML=0;
-		}
+	if (aterrizado){ //Sólo si ya hemos aterrizado, no cuando se despliega el menú
+		velocidad.innerHTML=0;
+		altura.innerHTML=0;
+	}
 }
 
 function moverNave(){
@@ -129,13 +163,19 @@ function moverNave(){
 	
 	//mover hasta que top sea un 70% de la pantalla
 	
-	if (y<0){ //Evita que la nave se salga de la pantalla, rebotando...	
+	if (y<0){ 	
 		document.getElementById("nave").style.top = "0%";
-		v=-v;
-	} else if(y<70&&y>=0) { 
+		v=-v; //Evita que la nave se salga de la pantalla, rebotando...
+	} else if(y<70&&y>0) { 
 		document.getElementById("nave").style.top = y+"%";
-	} else {
+	} else { //NAVE ATERRIZADA
 		aterrizado = true;
+		clearInterval(timerFuel); //Deja de actualizar el marcador de combustible 
+		if (nave==1){
+			document.getElementById("n").src = "img/cohete.png"
+		}else{
+			document.getElementById("n").src = "img/cohete2.png"
+		}
 		stop();
 	}	
 }
@@ -165,15 +205,21 @@ function motorOff(){
 	timerFuel=null;
 	//Cambio la imagen de la nave: sin fuego
 	if (nave==1){
-			document.getElementById("n").src = "img/cohete.png"
-		}else{
-			document.getElementById("n").src = "img/cohete2.png"
-		}
+		document.getElementById("n").src = "img/cohete.png"
+	}else{
+		document.getElementById("n").src = "img/cohete2.png"
+	}
 }
 
 function actualizarFuel(){
 	//Restamos combustible hasta que se agota
-	c-=0.1;
-	if (c < 0 ) c = 0;	
-	combustible.style.width=c+"%";
+	
+	if (c < 0 ) {
+		sinCombustible = true;
+		motorOff();
+	}	
+	if (pause == false) {
+		c-=0.1;
+		combustible.style.width=c+"%";
+	}
 }
