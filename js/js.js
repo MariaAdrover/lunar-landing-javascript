@@ -87,7 +87,8 @@ function nivelFacil (){
 
 function nivelDificil (){
 	document.getElementById('dificultad').style.display='none';
-	v=100;
+	v=15;
+	c=60;
 	juegoEmpezado = true;
 	start();
 }
@@ -227,7 +228,7 @@ function actualizarFuel(){
 }
 
 function finalJuego(){
-	if (v>15){
+	if (v>5){
 		document.getElementById('final2').style.display='block';
 		document.getElementsByClassName('velFinal')[1].innerHTML=v.toFixed(1);
 	}else{
