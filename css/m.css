@@ -174,14 +174,14 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 	margin-left:5%;
 }
 
-#final1 {
+#final1, final2 {
 	z-index:5;
 	text-align:center;
 	position:fixed;
-	top:20%;
-	left:30%;
-	width:30%;
-	height:40%;
+	top:35%;
+	left:17%;
+	width:60%;
+	height:20%;
 	background-color:yellow;
 	border-style: solid;
 	border-width: 12px;
@@ -189,20 +189,6 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 	display:none;
 }
 
-#final2 {
-	z-index:5;
-	text-align:center;
-	position:fixed;
-	top:20%;
-	left:30%;
-	width:30%;
-	height:40%;
-	background-color:yellow;
-	border-style: solid;
-	border-width: 12px;
-    border-color: grey;
-	display:none;
-}
 .reiniciar {
 	position:absolute;
 	max-width:100%;
