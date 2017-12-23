@@ -31,7 +31,7 @@ window.onload = function(){
 		
 	//botón MENU
 	document.getElementById("showm").onclick = function (){
-		if (juegoEmpezado){
+		if (juegoEmpezado && aterrizado == false){
 			if (pause){
 				reanudarJuego();
 			}else{
@@ -46,9 +46,11 @@ window.onload = function(){
 	}
 	
 	//botón CAMBIAR DE NAVE
-	//siempre está operativo
+	//siempre se puede cambiar de nave menos cuando se ha aterrizado
 	document.getElementById('cambiarNave').onclick = function() {
-		cambiarNave();
+		if (aterrizado == false){
+			cambiarNave();
+		}
 	}	
 	
 	//MOTOR
@@ -152,7 +154,6 @@ function moverNave(){
 	//cambiar velocidad y posicion
 	v +=a*dt;
 	y +=v*dt;
-	
 	//actualizar marcadores
 	if (v<0) {  //si la velocidad es negativa pasarla a positiva en el marcador		
 		velocidad.innerHTML=(-v).toFixed(1);
@@ -163,10 +164,10 @@ function moverNave(){
 	
 	//mover hasta que top sea un 70% de la pantalla
 	
-	if (y<0){ 	
+	if (y<=0){ 	
 		document.getElementById("nave").style.top = "0%";
 		v=-v; //Evita que la nave se salga de la pantalla, rebotando...
-	} else if(y<70&&y>0) { 
+	} else if(y<70&&y>=0) { 
 		document.getElementById("nave").style.top = y+"%";
 	} else { //NAVE ATERRIZADA
 		aterrizado = true;
@@ -177,6 +178,7 @@ function moverNave(){
 			document.getElementById("n").src = "img/cohete2.png"
 		}
 		stop();
+		finalJuego();
 	}	
 }
 
@@ -221,5 +223,15 @@ function actualizarFuel(){
 	if (pause == false) {
 		c-=0.1;
 		combustible.style.width=c+"%";
+	}
+}
+
+function finalJuego(){
+	if (v>15){
+		document.getElementById('final2').style.display='block';
+		document.getElementsByClassName('velFinal')[1].innerHTML=v.toFixed(1);
+	}else{
+		document.getElementById('final1').style.display='block';
+		document.getElementsByClassName('velFinal')[0].innerHTML=v.toFixed(1);
 	}
 }

@@ -85,19 +85,17 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 
 .botonC img{width:100%;}
 
-#power {
+#botonPower {
 	z-index:4;
 	text-align:center;
 	position:fixed;
-	bottom:5%;
-	right:1%;
-	width:20%;
-	height:20%;	
+	bottom:1%;
+	right:3%;
+	width:25%;
 }
 
-#power img{
-	height:100%;
-	max-height:100%;
+#botonPower img{
+	max-width:100%;
 }
 
 .menu {
@@ -135,15 +133,29 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 	z-index:5;
 	text-align:center;
 	position:fixed;
-	top:40%;
-	left:30%;
-	width:30%;
-	height:40%;
+	top:33%;
+	left:27%;
+	width:44%;
+	height:32%;
 	background-color:yellow;
 	border-style: solid;
-	border-width: 12px;
+	border-width: 8px;
     border-color: grey;
 	display:block;
+}
+
+.botonDificultad:hover {
+	background-color: #0043E1;
+}
+
+.botonDificultad {
+	display:block;	
+	padding:2%;
+	max-height:30%;
+}
+
+.botonDificultad img {
+	max-width:85%;
 }
 
 
@@ -162,7 +174,48 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 	margin-left:5%;
 }
 
+#final1 {
+	z-index:5;
+	text-align:center;
+	position:fixed;
+	top:20%;
+	left:30%;
+	width:30%;
+	height:40%;
+	background-color:yellow;
+	border-style: solid;
+	border-width: 12px;
+    border-color: grey;
+	display:none;
+}
 
+#final2 {
+	z-index:5;
+	text-align:center;
+	position:fixed;
+	top:20%;
+	left:30%;
+	width:30%;
+	height:40%;
+	background-color:yellow;
+	border-style: solid;
+	border-width: 12px;
+    border-color: grey;
+	display:none;
+}
+.reiniciar {
+	position:absolute;
+	max-width:100%;
+	padding:2%;
+}
+
+.reiniciar img{
+	width:100%;
+}
+
+.reiniciar:hover {
+	background-color: #0043E1;
+}
 
 #cpanel{}
 
