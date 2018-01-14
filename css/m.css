@@ -64,6 +64,17 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed;}
 	margin-left:6%; /*para centrar la nave*/
 }
 
+#warning {
+	z-index:1;
+	position:fixed;
+	top:40%;
+	left:22%;
+	color:red;
+	font-family: 'Arial';
+	font-size:6vw;
+	display:none;
+}
+
 #musicOn {
 	z-index:4;
 	position:fixed;

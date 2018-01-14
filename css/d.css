@@ -58,6 +58,17 @@ body{background:url(../img/cielo.jpeg) no-repeat fixed center;}
 	
 #nave img{height:100%;}
 
+#warning {
+	z-index:1;
+	position:fixed;
+	top:40%;
+	left:35%;
+	color:red;
+	font-family: 'Arial';
+	font-size:3vw;
+	display:none;
+}
+
 #musicOn {
 	z-index:4;
 	position:fixed;
