@@ -17,7 +17,7 @@ var y = 5; // altura inicial y0=10%, debe leerse al iniciar si queremos que teng
 var v = 0;
 var c = 100;
 var a = g; //la aceleración cambia cuando se enciende el motor de a=g a a=-g (simplificado)
-var vAterrizaje; //velocidad de aterrizaje
+var vWin;
 var nave=1; //Identificador de los modelos de naves
 var motorON=false;
 var aterrizado = false; 
@@ -270,7 +270,8 @@ window.onload = function(){
 
 
 function nivelFacil (){
-	document.getElementById('dificultad').style.display='none';	
+	document.getElementById('dificultad').style.display='none';
+	vWin=3;
 	nContador = 2;
 	contadorOn=true;
 	document.getElementById('contador3').style.display='block';
@@ -286,7 +287,8 @@ function nivelDificil (){
 		audioElement.pause();
 	}	
 	document.getElementById('dificultad').style.display='none';
-	v=15;	
+	v=15;
+	vWin=2;
 	document.getElementById('velocidad').innerHTML=v.toFixed(1);
 	dt=(dt*2);
 	c=50;
@@ -466,7 +468,7 @@ function actualizarFuel(){
 }
 
 function finalJuego(){
-	if (v>3){  //Has perdido
+	if (v>vWin){  //Has perdido
 		//Sonido
 		if (screen.width>770){
 			audioElement.setAttribute('src', 'sound/fail.wav');
