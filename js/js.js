@@ -455,6 +455,7 @@ function actualizarFuel(){
 	//Restamos combustible hasta que se agota
 	
 	if (c < 0 ) {
+		document.getElementById('warning').style.display='block';
 		sinCombustible = true;
 		motorOff();
 	}	
@@ -472,6 +473,7 @@ function finalJuego(){
 			if(musicOn==false){audioElement.pause();}
 		}
 		//Imagen
+		document.getElementById('warning').style.display='none';
 		document.getElementById('final2').style.display='block';
 		document.getElementsByClassName('velFinal')[1].innerHTML=v.toFixed(1);
 		if (nave==1){
@@ -484,6 +486,7 @@ function finalJuego(){
 			audioElement.setAttribute('src', 'sound/success.wav');
 			if(musicOn==false){audioElement.pause();}
 		}
+		document.getElementById('warning').style.display='none';
 		document.getElementById('final1').style.display='block';
 		document.getElementsByClassName('velFinal')[0].innerHTML=v.toFixed(1);
 		document.getElementById('n').src = 'img/astronauta.png';
