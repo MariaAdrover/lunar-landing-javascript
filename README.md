@@ -14,6 +14,8 @@
 > * Enlace a la página de [INSTRUCCIONES](https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/instrucciones.html)
 > * Enlace a la página de [ABOUT](https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/about.html)
 
+MODIFICACIONES Y CARACTERÍSTICAS DE CADA VERSIÓN
+
 ## Versión 0.7mini
 
 Versión minimificada
