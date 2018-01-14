@@ -15,24 +15,15 @@ Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7
 He hecho un mensaje confirm con la ventana en el estilo del juego. Para utilizar un confirm normal el código sería el siguiente:
 ```
 document.getElementsByClassName('aviso')[0].onclick = function(){
-
 	if (confirm("Si pulsas aceptar saldrás del juego e irás a la página de INSTRUCCIONES. ¿Quieres continuar?")==true){
-
 		location.href='https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/instrucciones.html';
-
-	}
-	
+	}	
 }
-	
-	
-document.getElementsByClassName('aviso')[1].onclick = function(){
 		
+document.getElementsByClassName('aviso')[1].onclick = function(){		
 	if (confirm("Si pulsas aceptar saldrás del juego e irás a la página de ABOUT. ¿Quieres continuar?")==true){
-
 		location.href='https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/about.html';
-
 	}
-
 }
 ``` 
  
