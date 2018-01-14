@@ -1,5 +1,9 @@
 ﻿# Lunar lander con html, css y javascript
+ 
+## Versión 0.7 minimificada
+Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7mini/index.html
 
+ 
 ## Versión 0.7
 
 Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/index.html
