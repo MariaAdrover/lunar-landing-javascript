@@ -5,6 +5,7 @@
 Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.6/index.html
 
 * Cuenta atrás: para que la nave no empiece a moverse enseguida, al elegir el nivel de dificultad se activa una cuenta atrás y después empieza el juego.El único botón operativo hasta que no termina la cuenta atrás es el de cambiar de nave.
+* He cambiado la dificultad
 * Botón About
   * Diseño del botón
   * Falta redireccionar, y elaborar página de redireccionamiento y ventana de advertencia
