@@ -12,7 +12,7 @@ Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7
 * El menú se puede desplegar en cualquier momento para que las instrucciones siempre estén disponibles, excepto cuando se muestra el mensaje confirm. Si el juego o la cuenta atrás han empezado, el botón de menú hace una pausa (en marcadores, cuenta atrás, nave...) y sólo están operativos el botón de about, instrucciones y cambiar de nave. Se puede volver al juego con el mismo botón o con el de volver al juego.
 * Al pulsar el botón de ABOUT o de instrucciones sale un mensaje para confirmar que hay que salir de la página. El mensaje de confirmación impide cualquier otra interacción (menú, pausa, acelerar...) excepto cambiar de nave, a la espera de que se confirme o no.
 He hecho un mensaje confirm con la ventana en el estilo del juego. Para utilizar un confirm normal el código sería el siguiente:
-```
+```javascript
 document.getElementsByClassName('aviso')[0].onclick = function(){
 	if (confirm("Si pulsas aceptar saldrás del juego e irás a la página de INSTRUCCIONES. ¿Quieres continuar?")==true){
 		location.href='https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/instrucciones.html';
