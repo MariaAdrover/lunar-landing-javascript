@@ -64,7 +64,7 @@ window.onload = function(){
 				if (menu){
 					document.getElementsByClassName("menu")[0].style.display = "none";
 					menu=false;
-					if (juegoEmpezado==false){
+					if (juegoEmpezado==false && contadorOn==false){
 						document.getElementById('dificultad').style.display='block';
 					}
 					if(contadorOn){
