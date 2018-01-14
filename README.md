@@ -5,7 +5,7 @@
 Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/index.html
 * Añadidos html, css y js (js2) de la página de INSTRUCCIONES y ABOUT. En las dos hay botones para enlazarlas con las demás; he incluido en ambas un botón para activar y desactivar la música.
 * Modificación del menú inicial de selección de dificultad. Creo que queda mejor indicar sólo el objetivo del juego, el de sonido y el de menú/pausa, además del nivel de dificultad para empezar el juego.
-* El menú se puede desplegar en cualquier momento para que las instrucciones siempre estén disponibles, excepto cuando se muestra el mensaje confirm. Si el juego o la cuenta atrás han empezado, el botón de menú hace una pausa (en marcadores, cuenta atrás, nave...) y sólo están operativos el botón de about, instrucciones y cambiar de nave.
+* El menú se puede desplegar en cualquier momento para que las instrucciones siempre estén disponibles, excepto cuando se muestra el mensaje confirm. Si el juego o la cuenta atrás han empezado, el botón de menú hace una pausa (en marcadores, cuenta atrás, nave...) y sólo están operativos el botón de about, instrucciones y cambiar de nave. Se puede volver al juego con el mismo botón o con el de volver al juego.
 * Al pulsar el botón de ABOUT o de instrucciones sale un mensaje para confirmar que hay que salir de la página. El mensaje de confirmación impide cualquier otra interacción (menú, pausa, acelerar...) excepto cambiar de nave, a la espera de que se confirme o no.
 He hecho un mensaje confirm con la ventana en el estilo del juego. Para utilizar un confirm normal el código sería el siguiente:
 ```
