@@ -3,31 +3,22 @@
 ## Versión 0.7
 
 Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/index.html
-* Añadidos html y css de la página de INSTRUCCIONES y ABOUT
-* Modificación del menú inicial de selección de dificultad. Creo que queda mejor indicar sólo el objetivo y cual es el botón de menú, porque si no, la página de instrucciones no tiene sentido.
-* El menú se puede desplegar en cualquier momento para que las instrucciones siempre estén disponibles.
-* Al pulsar el botón de ABOUT o de instrucciones sale un mensaje para confirmar que hay que salir de la página.
-He hecho un mensaje advert con la ventana en el estilo del juego. Para utilizar un advert normal el código sería el siguiente:
+* Añadidos html, css y js (js2) de la página de INSTRUCCIONES y ABOUT. En las dos hay botones para enlazarlas con las demás; he incluido en ambas un botón para activar y desactivar la música.
+* Modificación del menú inicial de selección de dificultad. Creo que queda mejor indicar sólo el objetivo del juego, el de sonido y el de menú/pausa, además del nivel de dificultad para empezar el juego.
+* El menú se puede desplegar en cualquier momento para que las instrucciones siempre estén disponibles, excepto cuando se muestra el mensaje confirm. Si el juego o la cuenta atrás han empezado, el botón de menú hace una pausa (en marcadores, cuenta atrás, nave...) y sólo están operativos el botón de about, instrucciones y cambiar de nave.
+* Al pulsar el botón de ABOUT o de instrucciones sale un mensaje para confirmar que hay que salir de la página. El mensaje de confirmación impide cualquier otra interacción (menú, pausa, acelerar...) excepto cambiar de nave, a la espera de que se confirme o no.
+He hecho un mensaje confirm con la ventana en el estilo del juego. Para utilizar un confirm normal el código sería el siguiente:
 ```
 document.getElementsByClassName('aviso')[0].onclick = function(){
-
 	if (confirm("Si pulsas aceptar saldrás del juego e irás a la página de INSTRUCCIONES. ¿Quieres continuar?")==true){
-
 		location.href='https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/instrucciones.html';
-
-	}
-	
+	}	
 }
-	
-	
-document.getElementsByClassName('aviso')[1].onclick = function(){
 		
+document.getElementsByClassName('aviso')[1].onclick = function(){		
 	if (confirm("Si pulsas aceptar saldrás del juego e irás a la página de ABOUT. ¿Quieres continuar?")==true){
-
 		location.href='https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/about.html';
-
 	}
-
 }
 ``` 
  
@@ -35,16 +26,14 @@ document.getElementsByClassName('aviso')[1].onclick = function(){
 
 Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.6/index.html
 
-* Cuenta atrás: para que la nave no empiece a moverse enseguida al elegir el nivel de dificultad se activa una cuenta atrás.
-El único botón operativo hasta que no termina la cuenta atrás es el de cambiar de nave.
+* Cuenta atrás: para que la nave no empiece a moverse enseguida, al elegir el nivel de dificultad se activa una cuenta atrás y después empieza el juego.El único botón operativo hasta que no termina la cuenta atrás es el de cambiar de nave.
 * Botón About
   * Diseño del botón
   * Falta redireccionar, y elaborar página de redireccionamiento y ventana de advertencia
 * Botón de sonido (he añadido sonido al juego)
-  * Diseño del botón
-  * Activa y desactiva el sonido
-  * En la versión móvil el sonido no se empieza a reproducir hasta que no se pulsa el botón
-  * He hecho que no tenga funcionalidad cuando el juego termina (para que la canción cambie según el final)
+  * Diseño de los botones que activan y desactivan el sonido.
+  * En la versión escritorio hay música diferente según el nivel de dificultad y el final.
+  * Para la versión móvil he tenido que poner otro código.  En el inspector de chrome, desde el ordenador, el código de la versión escritorio fucionaba, pero al probarlo desde el móvil, el sonido no se empieza a reproducir hasta que no se pulsa el botón de sonido dos veces; he leído que tiene que ver con el autoplay, que en los móviles está desactivado, y no he sabido arreglarlo. Sólo se activa al interaccionar con el dispositivo. Al final, para la versión móvil he dejado dos canciones, una para cada nivel, y no cambian al terminar el juego, porque si cambio la canción que suena con js, el autoplay no funciona y se queda sin sonido al terminar (ya que hay que pulsar algún botón para que suene). Aunque en el ordenador (con el inspector con el formato móvil) sí que suenan, en realidad en el móvil hay que pulsar el botón de sonido para que empiecen a sonar. Igualmente, luego se puede activar y desactivar el sonido normalmente. Lo indicaré de alguna forma en las instrucciones.
 
 
 ## Versión 0.5
