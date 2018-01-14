@@ -1,8 +1,23 @@
 ﻿# Lunar lander con html, css y javascript
+ 
+ 
+**VERSIÓN DEFINITIVA v0.7**
+
+> * Enlace a la página del [JUEGO](https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/index.html)
+> * Enlace a la página de [INSTRUCCIONES](https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/instrucciones.html)
+> * Enlace a la página de [ABOUT](https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/about.html)
+ 
+ **VERSIÓN MINIMIFICADA v0.7 mini**
+
+> * Enlace al [Repositorio branch v0.7 mini](https://github.com/MariaAdrover/lunar-landing-javascript/tree/v0.7mini)
+> * Enlace a la página del [JUEGO](https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/index.html)
+> * Enlace a la página de [INSTRUCCIONES](https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/instrucciones.html)
+> * Enlace a la página de [ABOUT](https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/about.html)
+
+MODIFICACIONES Y CARACTERÍSTICAS DE CADA VERSIÓN
 
 ## Versión 0.7
 
-Previsualización: https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/index.html
 * Añadidos html, css y js (js2) de la página de INSTRUCCIONES y ABOUT. En las dos hay botones para enlazarlas con las demás; he incluido en ambas un botón para activar y desactivar la música.
 * Modificación del menú inicial de selección de dificultad. Creo que queda mejor indicar sólo el objetivo del juego, el de sonido y el de menú/pausa, además del nivel de dificultad para empezar el juego.
 * El menú se puede desplegar en cualquier momento para que las instrucciones siempre estén disponibles, excepto cuando se muestra el mensaje confirm. Si el juego o la cuenta atrás han empezado, el botón de menú hace una pausa (en marcadores, cuenta atrás, nave...) y sólo están operativos el botón de about, instrucciones y cambiar de nave. Se puede volver al juego con el mismo botón o con el de volver al juego.
