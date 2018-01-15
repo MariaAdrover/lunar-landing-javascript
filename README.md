@@ -3,9 +3,9 @@
 **VERSIÓN MINIMIFICADA**
 
 > * Enlace al [Repositorio branch v0.7 mini](https://github.com/MariaAdrover/lunar-landing-javascript/tree/v0.7mini)
-> * Enlace a la página del [JUEGO](https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/index.html)
-> * Enlace a la página de [INSTRUCCIONES](https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/instrucciones.html)
-> * Enlace a la página de [ABOUT](https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7/about.html)
+> * Enlace a la página del [JUEGO](https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7mini/index.html)
+> * Enlace a la página de [INSTRUCCIONES](https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7mini/instrucciones.html)
+> * Enlace a la página de [ABOUT](https://rawgit.com/MariaAdrover/lunar-landing-javascript/v0.7mini/about.html)
 
 **VERSIÓN DEFINITIVA**
 
